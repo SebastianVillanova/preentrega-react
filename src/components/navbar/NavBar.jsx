@@ -1,9 +1,9 @@
 import "./NavBar.css"
 import { NavLink, Link } from "react-router-dom";
-import Carrito from "../Carrito/Carrito";
+import CartWidget from "../CartWidget/CartWidget";
 
 
-const NavBar = ()=>{
+const NavBar = ({cartCount})=>{
     return(
         <nav className="NavBar">
             <Link to="/">
@@ -19,7 +19,7 @@ const NavBar = ()=>{
                 <button>Tablets</button>
                 <button>Notebooks</button> */}
             </div>
-            <Carrito/>
+            <CartWidget cartCount={cartCount} />
         </nav>
     );
 }

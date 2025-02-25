@@ -15,6 +15,7 @@ const ItemListContainer = ({ greeting }) => {
 
     useEffect(() => {
         setLoading(true)
+    
 
         const collectionRef = categoryId
             ? query(collection(db, "products"), where("category", "==", categoryId))
@@ -35,6 +36,7 @@ const ItemListContainer = ({ greeting }) => {
                 setLoading(false)
             })
     }, [categoryId])
+
 
     return (
         <div className="container">

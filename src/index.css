@@ -31,6 +31,109 @@ div.App > div{
   font-size: 30px;
   margin: 5px;
 }
+
 .carritoClass{
   width: 30px;
+}
+
+.container{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn{
+  padding: 5px;
+  margin: 5px;
+  font-weight: bolder;
+  font-size: 20px;
+  background-color: rgb(139, 0, 182);
+  color: white;
+  border: 1px solid black;
+  border-radius: 6px;
+}
+
+/* CART */
+ul{
+  display: flex;
+  flex-direction: column;
+  list-style-type: none;
+  padding: 10px;
+  margin: 10px;
+  height: 400px;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid black;
+  border-radius: 6px;
+}
+
+li{
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.CartContainer{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.Cart{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.CartItems{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+img{
+  width: 150px;
+  height: 150px;
+}
+
+/* checkout */ 
+form{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
+}
+
+.field{
+  margin: 5px;
+}
+
+.control > input{
+  margin-top: 4px;
+  padding: 5px 3px;
+  border-radius: 5px;
+  border: 1px solid black;
+}
+
+.control > button{
+  height: 50px;
+  width: 80px;
+  margin-top: 4px;
+  padding: 5px 3px;
+  border-radius: 5px;
+  border: 1px solid black;
+  background-color: rgb(139, 0, 182);
+  color: white;
+  font-weight: bolder;
+}
+
+.artOrder{
+  height: 100px;
 }

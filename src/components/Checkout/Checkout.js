@@ -3,6 +3,7 @@ import { CartContext } from "../../context/CartContext";
 import { db } from "../../services/firebase/firebaseConfig";
 import CheckoutForm from "../CheckoutForm/CheckoutForm";
 import { Timestamp, collection, addDoc, writeBatch, getDocs, query, where, documentId } from "firebase/firestore";
+import "../../index.css";
 
 const Checkout = () => {
     const [loading, setLoading] = useState(false);
@@ -69,9 +70,9 @@ const Checkout = () => {
     }
     if (orderId) {
         return (
-            <div>
+            <div className="container">
                 <h1 className="text is-size-3">Orden generada con éxito!!</h1>
-                <article className="message is-success my-5">
+                <article className="artOrder">
                     <div className="message-header">
                         <p>ID de su orden:</p>
                     </div>
@@ -83,7 +84,7 @@ const Checkout = () => {
         )
     }
     return (
-        <div>
+        <div className="container">
             <h1 className="text is-size-1">Checkout</h1>
             <CheckoutForm onConfirm={createOrder} />
         </div>

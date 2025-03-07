@@ -1,5 +1,6 @@
 import { useContext } from "react";
 import { CartContext } from "../../context/CartContext";
+import "../../index.css";
 
 const CartItem = ({ id, name, price, quantity, img }) => {
     const { removeItem } = useContext(CartContext);
@@ -13,7 +14,7 @@ const CartItem = ({ id, name, price, quantity, img }) => {
         <div className="box">
             <ul className="list is-hoverable">
                 <li className="list-item">
-                    <div className="columns is-vcentered">
+                    <div className="CartItems">
                         
                         {/* Columna para la imagen */}
                         <div className="column is-one-quarter">
@@ -31,12 +32,12 @@ const CartItem = ({ id, name, price, quantity, img }) => {
                         </div>
 
                         {/* Columna para el botón eliminar */}
-                        <div className="column is-one-quarter">
+                        <div >
                             <button
                                 onClick={handleRemove}
-                                className="button is-danger is-fullwidth"
+                                className="btn"
                             >
-                                Eliminar
+                                Eliminar producto
                             </button>
                         </div>
                     </div>

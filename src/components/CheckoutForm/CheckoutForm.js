@@ -1,4 +1,5 @@
 import { useState } from "react";
+import "../../index.css";
 
 const CheckoutForm = ({ onConfirm }) => {
     const [name, setName] = useState("");
@@ -38,13 +39,8 @@ const CheckoutForm = ({ onConfirm }) => {
                 <div className="field is-grouped  my-5">
                     <p className="control">
                         <button className="button is-link">
-                            Submit
+                            Comprar
                         </button>
-                    </p>
-                    <p className="control">
-                        <a className="button is-light">
-                            Cancel
-                        </a>
                     </p>
                 </div>
             </form>
